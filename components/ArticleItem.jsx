@@ -5,8 +5,8 @@ import articleStyle from "./../styles/Article.module.css";
 const ArticleItem = ({ article }) => {
   return (
     (<Link
-      href="/article/[id]"
-      as={`/article/${article.id}`}
+      href="/articles/[id]"
+      as={`/articles/${article.id}`}
       className={articleStyle.card}>
 
       <h3>{article.title} &rarr;</h3>
