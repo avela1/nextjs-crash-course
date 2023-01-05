@@ -1,6 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 12rem;
+  font-size: 1.25rem;
+}
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(3, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
 }
@@ -19,21 +27,40 @@
   display: inline-block;
   transition: transform 200ms;
 }
-
+.card h1 {
+  line-height: 1.15;
+  font-size: 3rem;
+  margin: 1rem;
+  color: #0070f3;
+  text-align: center;
+}
 .card h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
+}
+.card .image {
+  height: 20rem;
+  object-fit: fill;
+  width: 100%;
+}
+.card img {
+  height: 10rem;
+  object-fit: fill;
+  width: 100%;
 }
 
 .card p {
   margin: 0;
   opacity: 0.6;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   line-height: 1.5;
-  max-width: 30ch;
+  text-align: center;
+  padding: 2rem;
+
+  /* max-width: 30ch; */
 }
 .card button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4caf50; /* Green */
   border: none;
   padding: 16px 32px;
   text-align: center;
@@ -41,8 +68,8 @@
   margin: 2rem 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: #555555; 
-  color: #fff; 
+  background-color: #555555;
+  color: #fff;
   border-radius: 12px;
   float: right;
 }

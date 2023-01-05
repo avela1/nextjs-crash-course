@@ -4,15 +4,15 @@ import articleStyle from "./../styles/Article.module.css";
 
 const ArticleItem = ({ article }) => {
   return (
-    (<Link
+    <Link
       href="/articles/[id]"
       as={`/articles/${article.id}`}
-      className={articleStyle.card}>
-
+      className={articleStyle.card}
+    >
+      <img src={article.thumbnail} alt="article image" />
       <h3>{article.title} &rarr;</h3>
-      <p>{article.body}</p>
-
-    </Link>)
+      {/* <p>{article.body}</p> */}
+    </Link>
   );
 };
 
